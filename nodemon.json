@@ -1,0 +1,16 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts",
+  "ignore": [
+    "src/**/*.spec.ts",
+    "/uploads"
+  ],
+  "exec": "ts-node -r tsconfig-paths/register src/main.ts",
+  "env": {
+    "MONGO_URI": "mongodb://localhost:27017/page_api",
+    "PORT": 3001,
+    "CACHE_TTL": 300000
+  }
+}
